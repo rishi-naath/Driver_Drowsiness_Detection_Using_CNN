@@ -5,7 +5,7 @@ from pygame import mixer
 import os
 import time  # Import the time module
 
-# Initialize mixer and load alarm sound
+# Initialize mixer and load alarm sound (use .wav file)
 mixer.init()
 alarm_path = r"path\to\your\.wav file"
 if not os.path.exists(alarm_path):
@@ -81,4 +81,5 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
 
