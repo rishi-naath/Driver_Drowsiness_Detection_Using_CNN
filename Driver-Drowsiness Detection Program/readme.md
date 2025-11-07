@@ -1,4 +1,4 @@
-this loads the model and runs in real time
+this loads the model and runs in real time.
 
 if the eyes are closed for more than 5 seconds, a trigger is initiated that plays a buzzer sound (.wav file of your choice, even cow sounds).
 
