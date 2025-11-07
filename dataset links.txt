@@ -1,2 +1,4 @@
-https://www.kaggle.com/datasets/dhirdevansh/eye-dataset-openclose-for-drowsiness-prediction (Open eyes Close Eyes) --Dataset 1
-https://www.kaggle.com/datasets/ismailnasri20/driver-drowsiness-dataset-ddd/data (Drowsy and Non-Drowsy) --Dataset 2
+https://www.kaggle.com/datasets/ismailnasri20/driver-drowsiness-dataset-ddd/data (Drowsy and Non-Drowsy) --Dataset 1
+
+
+https://www.kaggle.com/datasets/dhirdevansh/eye-dataset-openclose-for-drowsiness-prediction (Open eyes Close Eyes) --Dataset 2 (Recommended)
