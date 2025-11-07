@@ -9,16 +9,23 @@ The title sums it up
 
 Instructions:
 1. clone this repository via cmd:
+
+   
                    cd your/directory/to/clone
+
                    git clone https://github.com/rishi-naath/Driver_Drowsiness_Detection_Using_CNN
 
-2. after cloning, run:
+3. after cloning, run:
+
                    pip install -r requirements.txt
 
-3. then open the dataset links and download the dataset via kaggle
+5. then open the dataset links and download the dataset via kaggle
 
 Huge thanks to :
+
 Ismail Nasri, Mohammed First University, Morocco.
+
+
 Dhir Devansh, TIET Patiala.
 
 4. once done, specify the directory paths inside aiko (cnn_model(aiko)) and Driver_Drowsiness_Detection (DDD).
