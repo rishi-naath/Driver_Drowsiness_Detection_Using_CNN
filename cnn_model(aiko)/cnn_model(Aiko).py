@@ -37,32 +37,36 @@ datagen = ImageDataGenerator(
 )
 
 # Load training and validation data
-train = datagen.flow_from_directory('N:\\College\\Project\\Only Eyes', target_size=(64,64), color_mode='rgb',
+train = datagen.flow_from_directory('path\to\your\training\set', target_size=(64,64), color_mode='rgb',
                                     batch_size=32, class_mode='binary', subset='training')
-val = datagen.flow_from_directory('N:\\College\\Project\\Only Eyes', target_size=(64,64), color_mode='rgb',
+val = datagen.flow_from_directory('path\to\your\validation\set', target_size=(64,64), color_mode='rgb',
                                   batch_size=32, class_mode='binary', subset='validation')
 
-# Callbacks
+# Callbacks: 
+#Early_Stopping: if the model doesn't have much improvement over a few consecutive runs, here, val_loss is monitored.
 early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
+#shifts the rate of learning dynamically to optimize training efficiency
 lr_scheduler = ReduceLROnPlateau(monitor='val_loss', factor=0.5, patience=3)
 
-# Train the model
+# Train the model (more epochs, much more accurate during detection).
+# Use 8-10 epochs if your system can't handle more runs in a single run. 
 history = model.fit(train, validation_data=val, epochs=25, callbacks=[early_stopping, lr_scheduler])
 
-# Save the model in HDF5 format
+# Save the model in HDF5 format (whyyy literally whyyy i don't know, but let it be here)
 model.save('cnn_model.h5')
 
 # Save the model in SavedModel format
-model.save(r'N:\\College\\Project\\Required\\saved_model.keras')  # Save the model in a directory named 'saved_model'
+model.save(r'path\to\save\your\model')  # Save the model in a directory and name it as 'model_name.keras'
 
-# Visualize the CNN architecture
+# Visualize the CNN architecture (the flowchart that i can't seem to understand,sed)
 plot_model(model, to_file='cnn_model_graph.png', show_shapes=True, show_layer_names=True)
 
-# Plot training and validation loss
+# Plot training and validation loss (bring a bunch of friends and gamble on this)
 plt.plot(history.history['loss'], label='Training Loss')
 plt.plot(history.history['val_loss'], label='Validation Loss')
 plt.xlabel('Epochs')
 plt.ylabel('Loss')
 plt.legend()
 plt.title('Training and Validation Loss')
+
 plt.show()
