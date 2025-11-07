@@ -7,17 +7,18 @@ import time  # Import the time module
 
 # Initialize mixer and load alarm sound
 mixer.init()
-alarm_path = r"N:\College\Project\Buzzer Warning\Buzzer.wav"
+alarm_path = r"path\to\your\.wav file"
 if not os.path.exists(alarm_path):
     raise FileNotFoundError(f"Alarm sound file not found at: {alarm_path}")
 mixer.music.load(alarm_path)
 
 # Load pre-trained model
-model = load_model("N:\\College\\Project\\Required\\cnn_model.h5")
+model = load_model(r"Directory\of\your\model")
 
 # Load HaarCascade files
-face_cascade_path = "N:\\College\\Project\\HaarCascade\\haarcascade_frontalface_default.xml"
-eye_cascade_path = "N:\\College\\Project\\HaarCascade\\haarcascade_eye.xml"
+#Used as a reference to run the detection
+face_cascade_path = "haarcascade\face\path\and\file"
+eye_cascade_path = "haarcascade\eye\path\file"
 if not os.path.exists(face_cascade_path) or not os.path.exists(eye_cascade_path):
     raise FileNotFoundError("HaarCascade files not found.")
 face = cv2.CascadeClassifier(face_cascade_path)
@@ -80,3 +81,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
