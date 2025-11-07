@@ -1,4 +1,4 @@
-#Usage: pip install requirements.txt
+#Usage: pip install requirements.txt 
 
 #Base (must-have, or else no eyes, and the family of four in an SUV goes ka-boom).
 opencv-python==4.9.0.80 #it's the eyes chico (actually camera).
