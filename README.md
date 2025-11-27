@@ -23,10 +23,10 @@ Instructions:
 
 Huge thanks to :
 
-Ismail Nasri, Mohammed First University, Morocco.
+**Ismail Nasri**, Mohammed First University, Morocco.
 
 
-Dhir Devansh, TIET Patiala.
+**Dhir Devansh**, TIET Patiala.
 
 4. once done, specify the directory paths inside aiko (cnn_model(aiko)) and Driver_Drowsiness_Detection (DDD).
 
@@ -36,4 +36,4 @@ Dhir Devansh, TIET Patiala.
 
 7. for better detection in DDD, focus over a moderately-lit area.
 
-for any doubts, contact: rishinaath33@gmail.com (if your mail falls in my spam, i'm so sorry in advance you're going away).
+for any doubts, contact: rishinaath33@gmail.com
