@@ -3,9 +3,8 @@
 **Driver drowsiness** is a critical factor contributing to road accidents, as it 
 severely impairs attention, reaction time, and decision-making. Factors like long 
 driving hours, lack of sleep, and monotonous road conditions make drivers more 
-susceptible to fatigue, often leading to serious or fatal incidents blah blah blah bleh bleh blu blu blu........
+susceptible to fatigue, often leading to serious or fatal incidents.
 
-The title sums it up
 
 Instructions:
 1. clone this repository via cmd:
